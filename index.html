@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A 14KB developer portfolio." />
+    <title>Sam Magee</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        h2 {
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div style="font-weight: bold; font-size: 1.2rem">~/sam_magee</div>
+        <ul>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- INTRO -->
+    <header>
+        <h1>Sam Magee</h1>
+        <p style="
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: var(--accent);
+          margin-bottom: 0.5rem;
+        ">
+            Full-Stack Range. Low-Level Mindset.
+        </p>
+        <p style="margin-bottom: 1rem; max-width: 600px; color: var(--txt)">
+            A recent Computing graduate combining a SysAdmin background with modern
+            Software Engineering, AI/ML, and Systems programming. Based in Austin
+            and looking to build efficient, scalable software.
+        </p>
+    </header>
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+        <h2>Experience</h2>
+
+        <article class="job-card">
+            <header class="job-header">
+                <h3 class="job-title">
+                    IT Service Desk Analyst <span class="company-tag">@ SHI</span>
+                </h3>
+                <span class="date-badge">Jan 2025 - Present</span>
+            </header>
+            <p class="job-desc">
+                Delivering high-volume technical support for over 7,000 users with a
+                <span class="highlight">99% satisfaction rating</span>. Daily
+                operations include managing Active Directory and Entra ID access,
+                troubleshooting issues via ServiceNow, and optimizing deployment
+                workflows to
+                <span class="highlight">reduce ticket resolution times by 15%</span>.
+            </p>
+        </article>
+
+        <article class="job-card">
+            <header class="job-header">
+                <h3 class="job-title">
+                    Jr. System Administrator
+                    <span class="company-tag">@ Emerald Park</span>
+                </h3>
+                <span class="date-badge">Feb 2022 – Oct 2024</span>
+            </header>
+            <p class="job-desc">
+                Administered hybrid infrastructure (VMware, Dell EMC, MSSQL) and led
+                corporate-wide MFA rollout. Engineered custom automation tools using
+                PowerApps and deployed a self-hosted open-source RMM solution that
+                <span class="highlight">reduced annual costs by $15,000</span>.
+            </p>
+        </article>
+
+        <!-- EDUCATION CARD -->
+        <article class="job-card">
+            <header class="job-header">
+                <h3 class="job-title">
+                    B.Sc. (Hons) in Computing
+                    <span class="company-tag">@ TU Dublin</span>
+                </h3>
+                <span class="date-badge">Sep 2020 - Sep 2024</span>
+            </header>
+
+            <!-- Degree Details -->
+            <p class="job-desc" style="margin-bottom: 1rem">
+                Graduated with
+                <span class="highlight">Second Class Honours, GPA 3.25</span>.
+                Specialized in
+                <span class="highlight">Cyber Security & Software Engineering</span>,
+                bridging the gap between secure infrastructure and application
+                development.
+            </p>
+
+            <!-- Key Modules Grid -->
+            <div style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--dim);
+          ">
+                <span>> Secure Programming</span>
+                <span>> Penetration Testing</span>
+                <span>> Algs & Data Structures</span>
+                <span>> Network Forensics</span>
+            </div>
+
+            <!-- Capstone Project Section -->
+            <div style="
+            border-top: 1px dashed var(--dim);
+            padding-top: 0.8rem;
+            margin-top: 0.5rem;
+          ">
+                <strong style="color: var(--txt); font-size: 0.9rem">Thesis: AI Content Detection</strong>
+                <p class="job-desc" style="margin-top: 0.3rem">
+                    Researched and developed Machine Learning models to detect
+                    AI-generated imagery. Analyzed performance metrics against published
+                    datasets to evaluate the efficacy of current detection algorithms in
+                    a security context.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <div class="project-header">
+                <h3>AI-Generated Content Detection using ML</h3>
+                <a href="https://github.com/Im-Sam/TU863-Y4-FP">Source</a>
+            </div>
+            <div class="tech-stack">[PYTHON] [ML]</div>
+            <p>
+                Research project detailing the development and analysis of various
+                models as detection tools for AI-generated imagery.
+            </p>
+        </div>
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Windows Remote Access Trojan</h3>
+                <a href="https://github.com/Im-Sam/Y3-GP-RAT">Source</a>
+            </div>
+            <div class="tech-stack">[C] [PYTHON] [WinAPI]</div>
+            <p>
+                Python based server side controller allowing remote control of various
+                modules, written in C using WinAPI on an infected machine.
+            </p>
+            <br />
+            <div style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--dim);
+          ">
+                <span>> Clipboard content stealer</span>
+                <span>> Remote file transfer</span>
+                <span>> Keylogger</span>
+                <span>> Full reverse shell</span>
+                <span>> Send screenshot to server</span>
+                <span>> Download file to infected machine over web</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG LIST -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="project-card">
+            <div class="project-header">
+                <h3>The impossibility of seeing things as they are</h3>
+                <a href="blog/blog-001.html">Read</a>
+            </div>
+            <div class="tech-stack">2025-12-03</div>
+            <p>
+                On subjectivity, Umwelts, and the difficulty of human communication.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER (Centered for Index) -->
+    <footer style="text-align: center">
+        <div class="stat-box" style="justify-content: center">
+            <span>Load: <span id="perf-load" class="stat-value">...</span></span>
+            <span>Weight: <span id="perf-weight" class="stat-value">...</span></span>
+            <span>Render: <span id="perf-dom" class="stat-value">...</span></span>
+        </div>
+        <p>&copy; 2024. No Frameworks. No Tracking. Just HTML.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

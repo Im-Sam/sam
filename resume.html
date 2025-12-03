@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Sam Magee</title>
+    <meta name="description" content="Resume of Sam Magee - IT Specialist & Software Developer" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Unique CSS: Print Styles specific to Resume -->
+    <style>
+        .contact-info {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--dim);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        /* Utility: Print Button */
+        .print-btn {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 5px 10px;
+            font-family: var(--font-mono);
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .print-btn:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        /* LIST STYLES FOR RESUME */
+        ul.resume-list {
+            list-style: none;
+            margin-top: 0.5rem;
+            margin-left: 0;
+        }
+
+        ul.resume-list li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--txt);
+            font-size: 0.95rem;
+        }
+
+        ul.resume-list li::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        ul.resume-list li ul {
+            margin-left: 0.5rem;
+        }
+
+        ul.resume-list li li::before {
+            content: "-";
+            color: var(--dim);
+        }
+
+        /* REPLACE THE @media print BLOCK IN resume.html WITH THIS */
+        @media print {
+
+            /* 1. Page Setup - Tighter Margins */
+            @page {
+                margin: 0.4in;
+                size: letter;
+            }
+
+            body {
+                background: white;
+                color: black;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                font-size: 10pt;
+                /* Smaller font for compactness */
+                line-height: 1.35;
+                /* Tighter leading */
+            }
+
+            /* 2. Hide Elements (Nav, Footer, Buttons, AND LinkedIn) */
+            nav,
+            footer,
+            .print-btn {
+                display: none !important;
+            }
+
+            /* 3. Header Compaction */
+            header {
+                border-bottom: 1px solid #000;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1rem;
+            }
+
+            h1 {
+                color: #000;
+                margin-top: 0;
+                margin-bottom: 0.2rem;
+                font-size: 22pt;
+                /* Slightly smaller H1 */
+            }
+
+            .contact-info {
+                font-size: 9pt;
+                color: #333;
+                gap: 0.5rem;
+            }
+
+            /* 4. Section & Typography Compaction */
+            h2 {
+                color: #000;
+                border-bottom: 1px solid #000;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                font-size: 11pt;
+                padding-bottom: 2px;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            /* 5. Article/Job Compaction */
+            article {
+                break-inside: avoid;
+                /* Prevents splitting a job across pages */
+                border: none;
+                padding: 0;
+                margin-bottom: 0.8rem;
+                /* Less space between jobs */
+            }
+
+            .job-header {
+                margin-bottom: 0.2rem;
+            }
+
+            .company-tag {
+                color: #000;
+                font-weight: bold;
+            }
+
+            .date-badge {
+                color: #000;
+                background: none;
+                padding: 0;
+                font-weight: bold;
+                font-size: 9pt;
+            }
+
+            /* 6. List Compaction */
+            ul.resume-list {
+                margin-top: 0.2rem;
+            }
+
+            ul.resume-list li {
+                padding-left: 1rem;
+                margin-bottom: 0.2rem;
+                /* Tight bullet points */
+                color: #000;
+                font-size: 10pt;
+            }
+
+            ul.resume-list li::before {
+                color: #000;
+                content: "•";
+                /* Standard bullet for print looks cleaner than > */
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav>
+        <div>
+            <a href="index.html">← ~/sam_magee/home</a>
+            <span style="margin: 0 0.5rem">/</span> resume.html
+        </div>
+        <button class="print-btn" onclick="window.print()">
+            [ Print / Save PDF ]
+        </button>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Sam Magee</h1>
+        <div class="contact-info">
+            <span>Austin, Texas</span> | <a href="tel:5129379642">512-937-9642</a> |
+            <a href="mailto:samam.magee@gmail.com">samam.magee@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/im-sam/" style="font-size: 0.9rem">linkedin.com/in/im-sam</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- SUMMARY -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Ambitious computing graduate with strong IT, software development, and
+                cyber security skills. Experienced in networking, software
+                development, and system administration. Eager to find a position in
+                the Austin tech industry.
+            </p>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <h2>Experience</h2>
+
+            <article>
+                <div class="job-header" style="margin-bottom: 0.5rem">
+                    <h3 class="job-title">
+                        IT Service Desk Analyst <span class="company-tag">@ SHI</span>
+                    </h3>
+                    <span class="date-badge">Jan 2025 - Present</span>
+                </div>
+                <ul class="resume-list">
+                    <li>
+                        Provided comprehensive technical support for over 7000 end-users,
+                        exceeding 99% user satisfaction rating.
+                    </li>
+                    <li>
+                        Resolved 25+ daily support tickets (ServiceNow) for hardware,
+                        software, and network connectivity within SLA.
+                    </li>
+                    <li>
+                        Administered Active Directory and Microsoft Entra ID (access, GPO,
+                        onboarding).
+                    </li>
+                    <li>
+                        Deployed hardware/software, creating documentation that reduced
+                        ticket resolution time by 15%.
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <div class="job-header" style="margin-bottom: 0.5rem">
+                    <h3 class="job-title">
+                        System Administrator
+                        <span class="company-tag">@ Emerald Park</span>
+                    </h3>
+                    <span class="date-badge">Feb 2022 – Oct 2024</span>
+                </div>
+                <ul class="resume-list">
+                    <li>
+                        Administered hybrid infrastructure (VMware, Dell EMC, HPE, Veeam,
+                        MSSQL).
+                    </li>
+                    <li>
+                        Enhanced security by implementing hybrid Entra (Azure AD) and
+                        leading corporate MFA rollout.
+                    </li>
+                    <li>
+                        Automated workflows via PowerBI/PowerApps, saving significant
+                        manual labor hours weekly.
+                    </li>
+                    <li>
+                        Engineered self-hosted open-source RMM solution, generating
+                        $15,000 in annual cost savings.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <article>
+                <div class="job-header" style="margin-bottom: 0.5rem">
+                    <h3 class="job-title">
+                        B.Sc. (Hons) in Computing
+                        <span class="company-tag">@ TU Dublin</span>
+                    </h3>
+                    <span class="date-badge">Sep 2020 - Sep 2024</span>
+                </div>
+                <ul class="resume-list">
+                    <li>
+                        <strong>Specialization:</strong> Cyber Security and Software
+                        Engineering.
+                    </li>
+                    <li>
+                        <strong>Grade:</strong> Second Class Honours, Grade One (2.1) –
+                        3.25 GPA.
+                    </li>
+                    <li>
+                        <strong>Relevant Coursework:</strong> Algorithms, Secure
+                        Programming, Networking, Penetration Testing.
+                    </li>
+                    <li>
+                        <strong>Thesis Project:</strong> Evaluating Machine Learning for
+                        AI Content Detection.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- References -->
+            <section>
+                <h2>References</h2>
+                <article>
+                    <div class="job-header" style="margin-bottom: 0.5rem">
+                        <h3 class="job-title">
+                            Available upon request
+                        </h3>
+                    </div>
+                </article>
+            </section>
+    </main>
+
+    <!-- FOOTER (Left Aligned) -->
+    <footer style="text-align: left">
+        <div class="stat-box">
+            <span>Load: <span id="perf-load" class="stat-value">...</span></span>
+            <span>Weight: <span id="perf-weight" class="stat-value">...</span></span>
+            <span>Render: <span id="perf-dom" class="stat-value">...</span></span>
+        </div>
+        <a href="index.html">← Return to Home</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
