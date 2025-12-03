@@ -1,6 +1,4 @@
 window.addEventListener('load', () => {
-    // We wrap this in setTimeout(..., 0) to ensure the load event 
-    // has fully completed and the timestamp is populated.
     setTimeout(() => {
         // 1. Calculate Load Time
         const t = window.performance.timing;
@@ -27,3 +25,4 @@ window.addEventListener('load', () => {
         console.log("This site is hand-coded to ensure maximum velocity.");
     }, 0);
 });
+
