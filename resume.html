@@ -67,7 +67,6 @@
             color: var(--dim);
         }
 
-        /* REPLACE THE @media print BLOCK IN resume.html WITH THIS */
         @media print {
 
             /* 1. Page Setup - Tighter Margins */
@@ -88,7 +87,7 @@
                 /* Tighter leading */
             }
 
-            /* 2. Hide Elements (Nav, Footer, Buttons, AND LinkedIn) */
+            /* 2. Hide Elements (Nav, Footer, Buttons) */
             nav,
             footer,
             .print-btn {
@@ -134,11 +133,9 @@
             /* 5. Article/Job Compaction */
             article {
                 break-inside: avoid;
-                /* Prevents splitting a job across pages */
                 border: none;
                 padding: 0;
                 margin-bottom: 0.8rem;
-                /* Less space between jobs */
             }
 
             .job-header {
@@ -319,7 +316,7 @@
             </section>
     </main>
 
-    <!-- FOOTER (Left Aligned) -->
+    <!-- FOOTER -->
     <footer style="text-align: left">
         <div class="stat-box">
             <span>Load: <span id="perf-load" class="stat-value">...</span></span>
@@ -331,5 +328,6 @@
 
     <script src="script.js"></script>
 </body>
+
 
 </html>
