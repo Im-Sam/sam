@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume | Sam Magee</title>
-    <meta name="description" content="Resume of Sam Magee - Software Engineer & Infrastructure Specialist" />
+    <meta name="description" content="Resume of Sam Magee - SRE, DevOps & Infrastructure Engineer" />
     <link rel="stylesheet" href="style.css" />
-
     <style>
         .contact-info {
             font-family: var(--font-mono);
@@ -18,11 +16,9 @@
             gap: 0.75rem;
             margin-top: 0.5rem;
         }
-
         .contact-info a {
             text-decoration: none;
         }
-
         .print-btn {
             background: transparent;
             border: 1px solid var(--accent);
@@ -33,29 +29,24 @@
             font-size: 0.8rem;
             transition: 0.2s ease;
         }
-
         .print-btn:hover {
             background: var(--accent);
             color: var(--bg);
         }
-
         .resume-section {
             margin-bottom: 2rem;
         }
-
         .resume-list {
             list-style: none;
             padding: 0;
             margin-top: 0.75rem;
         }
-
         .resume-list li {
             position: relative;
             padding-left: 1.25rem;
             margin-bottom: 0.6rem;
             line-height: 1.5;
         }
-
         .resume-list li::before {
             content: "›";
             position: absolute;
@@ -63,7 +54,6 @@
             color: var(--accent);
             font-weight: bold;
         }
-
         .job-header {
             display: flex;
             justify-content: space-between;
@@ -72,75 +62,62 @@
             flex-wrap: wrap;
             margin-bottom: 0.5rem;
         }
-
         .job-title {
             margin-bottom: 0.25rem;
         }
-
         .company-tag {
             color: var(--accent);
         }
-
         .date-badge {
             font-family: var(--font-mono);
             color: var(--dim);
             font-size: 0.9rem;
             white-space: nowrap;
         }
-
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1rem;
             margin-top: 1rem;
         }
-
         .skill-card {
             border: 1px solid var(--border);
             padding: 1rem;
             border-radius: 8px;
             background: rgba(255, 255, 255, 0.02);
         }
-
         .skill-card h3 {
             margin-bottom: 0.75rem;
             color: var(--accent);
             font-size: 1rem;
         }
-
         .project-tech {
             font-family: var(--font-mono);
             color: var(--accent);
             font-size: 0.85rem;
             margin-top: 0.3rem;
         }
-
         @media print {
-
             @page {
                 margin: 0.45in;
                 size: letter;
             }
-
             body {
                 background: white;
                 color: black;
                 font-size: 10pt;
                 line-height: 1.35;
             }
-
             nav,
             footer,
             .print-btn {
                 display: none !important;
             }
-
             header {
                 border-bottom: 1px solid black;
                 margin-bottom: 1rem;
                 padding-bottom: 0.5rem;
             }
-
             h1,
             h2,
             h3,
@@ -150,12 +127,10 @@
             a {
                 color: black !important;
             }
-
             h1 {
                 font-size: 22pt;
                 margin-bottom: 0.25rem;
             }
-
             h2 {
                 border-bottom: 1px solid black;
                 padding-bottom: 0.2rem;
@@ -163,30 +138,24 @@
                 margin-bottom: 0.5rem;
                 font-size: 11pt;
             }
-
             .resume-section {
                 margin-bottom: 1rem;
             }
-
             article {
                 break-inside: avoid;
                 margin-bottom: 0.75rem;
             }
-
             .resume-list li {
                 margin-bottom: 0.2rem;
                 font-size: 9.8pt;
             }
-
             .resume-list li::before {
                 content: "•";
                 color: black;
             }
-
             .skills-grid {
                 display: block;
             }
-
             .skill-card {
                 border: none;
                 padding: 0;
@@ -195,9 +164,7 @@
         }
     </style>
 </head>
-
 <body>
-
     <!-- NAV -->
     <nav>
         <div>
@@ -205,7 +172,6 @@
             <span style="margin: 0 0.5rem">/</span>
             resume.html
         </div>
-
         <a 
             class="print-btn"
             href="https://raw.githubusercontent.com/Im-Sam/sam/main/Sam-M-Resume.pdf"
@@ -214,11 +180,9 @@
             [ Download Resume PDF ]
         </a>
     </nav>
-
     <!-- HEADER -->
     <header>
         <h1>Sam Magee</h1>
-
         <div class="contact-info">
             <span>Austin, Texas</span>
             <span>|</span>
@@ -233,68 +197,80 @@
             <a href="https://github.com/Im-Sam" target="_blank">github.com/Im-Sam</a>
         </div>
     </header>
-
     <main>
-
         <!-- SUMMARY -->
         <section class="resume-section">
             <h2>Professional Summary</h2>
-
             <p>
-                Computer science graduate with experience in operations, backend
-                development, cloud infrastructure, automation, and SQL. Previously
-                worked with C/C++, Java, Python, AI/ML, GCP, and AWS in enterprise
-                environments. Strong background bridging infrastructure engineering
-                with software development and automation.
+                Site Reliability, DevOps, and Infrastructure Engineer with enterprise experience in cloud operations, incident response, automation, and backend development. Proven expertise in managing high-availability production environments, Linux/Windows systems, virtualization (VMware), and Infrastructure as Code (Terraform, Ansible). Skilled in bridging systems reliability with software engineering through Python, CI/CD pipelines, and observability tools (Datadog, Grafana).
             </p>
         </section>
-
         <!-- SKILLS -->
         <section class="resume-section">
             <h2>Technical Skills</h2>
-
             <div class="skills-grid">
-
                 <div class="skill-card">
-                    <h3>Languages</h3>
+                    <h3>Languages & Scripting</h3>
                     <p>
-                        Python, Java, C/C++, LUA, C#, SQL,
-                        JavaScript, HTML/CSS
+                        Python, Bash/Shell, SQL, Java, C/C++, C#, JavaScript
                     </p>
                 </div>
-
                 <div class="skill-card">
-                    <h3>Frameworks</h3>
+                    <h3>Cloud & Infrastructure</h3>
                     <p>
-                        React, Node.js, Flask, Bootstrap
+                        AWS, GCP, Linux (RHEL/Ubuntu), Windows Server, VMware ESXi, vCenter, NetApp, PureStorage, Dell EMC
                     </p>
                 </div>
-
                 <div class="skill-card">
-                    <h3>Developer Tools</h3>
+                    <h3>DevOps & SRE</h3>
                     <p>
-                        Git, Docker, GCP, AWS,
-                        VS Code, Visual Studio, PyCharm,
-                        IntelliJ, Eclipse
+                        Terraform, Ansible, Docker, CI/CD Pipelines, Git, Perforce, Datadog, Grafana, PagerDuty, Incident Response
                     </p>
                 </div>
-
                 <div class="skill-card">
-                    <h3>Libraries & Technologies</h3>
+                    <h3>Collaboration & Tools</h3>
                     <p>
-                        TensorFlow, PyTorch, WinAPI, pandas,
-                        NumPy, Matplotlib, VMware,
-                        Microsoft Entra ID, SQL Server
+                        Jira, Confluence, Slack Admin, Claude Code, Cursor, ChatGPT, VS Code, PyCharm, Enterprise ServiceNow
                     </p>
                 </div>
-
             </div>
         </section>
-
         <!-- EXPERIENCE -->
         <section class="resume-section">
             <h2>Experience</h2>
-
+            <article>
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">
+                            TechOps & Infrastructure Analyst
+                            <span class="company-tag">@ 2K Games</span>
+                        </h3>
+                    </div>
+                    <span class="date-badge">
+                        July 2026 – Present
+                    </span>
+                </div>
+                <ul class="resume-list">
+                    <li>
+                        Act as a primary escalation point and incident commander for production applications, systems, and cloud infrastructure across globally distributed environments, ensuring strict uptime and performance SLAs.
+                    </li>
+                    <li>
+                        Manage major incident response workflows, root cause analysis (RCA), and comprehensive post-mortem documentation in Confluence and Jira to ensure operational excellence and audit compliance.
+                    </li>
+                    <li>
+                        Administer and configure production Linux and Windows systems, VMware ESXi/vCenter virtualization, and enterprise storage arrays (NetApp, PureStorage, Dell EMC).
+                    </li>
+                    <li>
+                        Implement Infrastructure as Code (IaC) and automation solutions using Terraform, Ansible, Python, and shell scripting to streamline server provisioning, patching, and configuration management.
+                    </li>
+                    <li>
+                        Monitor fleet-wide system health, metrics, and telemetry using Datadog, Grafana, and PagerDuty to proactively detect anomalies and minimize MTTR.
+                    </li>
+                    <li>
+                        Oversee CI/CD software engineering pipelines, Git, and Perforce version control workflows, collaborating closely with development teams to support reliable deployments.
+                    </li>
+                </ul>
+            </article>
             <article>
                 <div class="job-header">
                     <div>
@@ -303,42 +279,28 @@
                             <span class="company-tag">@ SHI</span>
                         </h3>
                     </div>
-
                     <span class="date-badge">
                         January 2025 – November 2025
                     </span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
-                        Provided technical support for 7,000+ enterprise users in a
-                        fast-paced environment while consistently maintaining SLA
-                        compliance.
+                        Provided technical support for 7,000+ enterprise users in a fast-paced environment while consistently maintaining SLA compliance.
                     </li>
-
                     <li>
-                        Resolved 25+ daily ServiceNow tickets involving software,
-                        networking, authentication, and infrastructure-related issues.
+                        Resolved 25+ daily ServiceNow tickets involving software, networking, authentication, and infrastructure-related issues.
                     </li>
-
                     <li>
-                        Administered Active Directory and Microsoft Entra ID
-                        environments, including onboarding, access management, and
-                        policy configuration.
+                        Administered Active Directory and Microsoft Entra ID environments, including onboarding, access management, and policy configuration.
                     </li>
-
                     <li>
-                        Created technical documentation and process improvements that
-                        reduced ticket resolution times by 15%.
+                        Created technical documentation and process improvements that reduced ticket resolution times by 15%.
                     </li>
-
                     <li>
-                        Collaborated with AI/ML R&D software engineering teams in the
-                        development of agentic solutions.
+                        Collaborated with AI/ML R&D software engineering teams in the development of agentic solutions.
                     </li>
                 </ul>
             </article>
-
             <article>
                 <div class="job-header">
                     <div>
@@ -347,219 +309,162 @@
                             <span class="company-tag">@ Emerald Park</span>
                         </h3>
                     </div>
-
                     <span class="date-badge">
                         February 2022 – October 2024
                     </span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
-                        Administered hybrid infrastructure environments including
-                        VMware, Dell EMC, HPE systems, Microsoft SQL Server, and
-                        enterprise backup platforms.
+                        Administered hybrid infrastructure environments including VMware, Dell EMC, HPE systems, Microsoft SQL Server, and enterprise backup platforms.
                     </li>
-
                     <li>
-                        Designed and implemented automation solutions using PowerApps
-                        and PowerBI, significantly reducing manual operational workload.
+                        Designed and implemented automation solutions using PowerApps and PowerBI, significantly reducing manual operational workload.
                     </li>
-
                     <li>
-                        Built and deployed a self-hosted open-source RMM solution that
-                        reduced annual company costs by $15,000.
+                        Built and deployed a self-hosted open-source RMM solution that reduced annual company costs by $15,000.
                     </li>
-
                     <li>
-                        Implemented hybrid Microsoft Entra ID integration and led
-                        organization-wide MFA rollout to strengthen security posture.
+                        Implemented hybrid Microsoft Entra ID integration and led organization-wide MFA rollout to strengthen security posture.
                     </li>
-
                     <li>
-                        Optimized POS database workflows using caching mechanisms,
-                        improving transaction performance and scalability.
+                        Optimized POS database workflows using caching mechanisms, improving transaction performance and scalability.
                     </li>
-
                     <li>
-                        Worked with finance and operations teams to develop SQL-backed
-                        reporting and analytics solutions.
+                        Worked with finance and operations teams to develop SQL-backed reporting and analytics solutions.
                     </li>
                 </ul>
             </article>
         </section>
-
         <!-- PROJECTS -->
         <section class="resume-section">
             <h2>Projects</h2>
-
-<article>
-    <div class="job-header">
-        <div>
-            <h3 class="job-title">
-                SentinelBERT — AI-powered log anomaly detection system
-            </h3>
-
-            <div class="project-tech">
-                Python • PyTorch • HuggingFace • Streamlit
-            </div>
-        </div>
-
-        <span class="date-badge">2026</span>
-        </div>
-    
-        <ul class="resume-list">
-            <li>
-                Transformer-based security log anomaly detection system using a fine-tuned DistilBERT model to classify Windows and Azure authentication events (4624/4625/4768). Built a synthetic + Azure VM log generation pipeline to simulate realistic security telemetry for training and evaluation.
-            </li>
-    
-            <li>
-                Implemented an end-to-end ML pipeline covering preprocessing, model training, and inference scoring with probabilistic risk classification (LOW / MEDIUM / HIGH).
-            </li>
-    
-            <li>
-                Developed a Streamlit-based analyst dashboard for real-time log ingestion, anomaly scoring, and security event visualization to support SOC-style triage workflows.
-            </li>
-        </ul>
-    </article>
-            
+            <article>
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">
+                            SentinelBERT — AI-powered log anomaly detection system
+                        </h3>
+                        <div class="project-tech">
+                            Python • PyTorch • HuggingFace • Streamlit
+                        </div>
+                    </div>
+                    <span class="date-badge">2026</span>
+                </div>
+                <ul class="resume-list">
+                    <li>
+                        Transformer-based security log anomaly detection system using a fine-tuned DistilBERT model to classify Windows and Azure authentication events (4624/4625/4768). Built a synthetic + Azure VM log generation pipeline to simulate realistic security telemetry for training and evaluation.
+                    </li>
+                    <li>
+                        Implemented an end-to-end ML pipeline covering preprocessing, model training, and inference scoring with probabilistic risk classification (LOW / MEDIUM / HIGH).
+                    </li>
+                    <li>
+                        Developed a Streamlit-based analyst dashboard for real-time log ingestion, anomaly scoring, and security event visualization to support SOC-style triage workflows.
+                    </li>
+                </ul>
+            </article>
             <article>
                 <div class="job-header">
                     <div>
                         <h3 class="job-title">
                             AI-powered monitoring system for virtual machines
                         </h3>
-
                         <div class="project-tech">
-                            Python • PyTorch
+                            Python • PyTorch • Datadog / Metrics
                         </div>
                     </div>
-
                     <span class="date-badge">2026</span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
-                        SRE-style predictive infrastructure monitoring system using an LSTM autoencoder to detect anomalies in VM
-                        CPU, memory, disk, and network metrics. Implemented per-VM dynamic baselines, explainable anomaly detection,
-                        and failure risk scoring. Developed an interactive Dash dashboard for fleet-level observability and real-time health
-                        insights across 50+ simulated virtual machines.
+                        SRE-style predictive infrastructure monitoring system using an LSTM autoencoder to detect anomalies in VM CPU, memory, disk, and network metrics. Implemented per-VM dynamic baselines, explainable anomaly detection, and failure risk scoring. Developed an interactive Dash dashboard for fleet-level observability and real-time health insights across 50+ simulated virtual machines.
+                    </li>
                 </ul>
             </article>
-
             <article>
                 <div class="job-header">
                     <div>
                         <h3 class="job-title">
                             OpsGPT — Private IT Knowledge Base
                         </h3>
-
                         <div class="project-tech">
                             Python • LangChain • Llama3 • FAISS
                         </div>
                     </div>
-
                     <span class="date-badge">2026</span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
-                        A fully local RAG (Retrieval-Augmented Generation) chatbot for IT operations teams. Allows for loading internal
-                        runbooks, SOPs, knoweldge base articles and query in natural language.
+                        A fully local RAG (Retrieval-Augmented Generation) chatbot for IT operations teams. Allows for loading internal runbooks, SOPs, knowledge base articles and querying in natural language.
                     </li>
                 </ul>
             </article>
-
             <article>
                 <div class="job-header">
                     <div>
                         <h3 class="job-title">
                             AI Content Detection Thesis Project
                         </h3>
-
                         <div class="project-tech">
                             Python • TensorFlow • Keras • NumPy • pandas
                         </div>
                     </div>
-
                     <span class="date-badge">2024</span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
-                        Developed and evaluated machine learning models for detecting
-                        AI-generated imagery as part of undergraduate thesis research.
+                        Developed and evaluated machine learning models for detecting AI-generated imagery as part of undergraduate thesis research.
                     </li>
-
                     <li>
-                        Performed data preprocessing, model training, and comparative
-                        analysis across multiple deep learning approaches.
+                        Performed data preprocessing, model training, and comparative analysis across multiple deep learning approaches.
                     </li>
                 </ul>
             </article>
-
             <article>
                 <div class="job-header">
                     <div>
                         <h3 class="job-title">
                             Windows Remote Access Security Research
                         </h3>
-
                         <div class="project-tech">
                             C • Python • WinAPI
                         </div>
                     </div>
-
                     <span class="date-badge">2023</span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
-                        Developed a modular remote systems administration and security
-                        research tool using C, WinAPI, and a Python-based controller.
+                        Developed a modular remote systems administration and security research tool using C, WinAPI, and a Python-based controller.
                     </li>
-
                     <li>
-                        Implemented functionality for remote command execution,
-                        file transfer, screenshot capture, and modular system
-                        interaction.
+                        Implemented functionality for remote command execution, file transfer, screenshot capture, and modular system interaction.
                     </li>
                 </ul>
             </article>
-
             <article>
                 <div class="job-header">
                     <div>
                         <h3 class="job-title">
                             Mechanix - Car Maintenance Tracker
                         </h3>
-
                         <div class="project-tech">
                             TypeScript • Node.js • Supabase • Vercel
                         </div>
                     </div>
-
                     <span class="date-badge">2026</span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
-                        Built a full-stack vehicle maintenance platform with
-                        authentication, image uploads, vehicle transfer,
-                        and multi-car management functionality.
+                        Built a full-stack vehicle maintenance platform with authentication, image uploads, vehicle transfer, and multi-car management functionality.
                     </li>
-
                     <li>
-                        Designed backend database structures and deployed the
-                        application using Supabase and Vercel cloud infrastructure.
+                        Designed backend database structures and deployed the application using Supabase and Vercel cloud infrastructure.
                     </li>
                 </ul>
             </article>
         </section>
-
         <!-- EDUCATION -->
         <section class="resume-section">
             <h2>Education</h2>
-
             <article>
                 <div class="job-header">
                     <div>
@@ -568,27 +473,21 @@
                             <span class="company-tag">@ Technological University Dublin</span>
                         </h3>
                     </div>
-
                     <span class="date-badge">
                         August 2020 – May 2024
                     </span>
                 </div>
-
                 <ul class="resume-list">
                     <li>
                         Minor in Cyber Security
                     </li>
-
                     <li>
-                        Relevant coursework included algorithms, networking,
-                        secure programming, penetration testing, and software engineering.
+                        Relevant coursework included algorithms, networking, secure programming, penetration testing, and software engineering.
                     </li>
                 </ul>
             </article>
         </section>
-
     </main>
-
     <!-- FOOTER -->
     <footer style="text-align: left;">
         <div class="stat-box">
@@ -596,12 +495,8 @@
             <span>Weight: <span id="perf-weight" class="stat-value">...</span></span>
             <span>Render: <span id="perf-dom" class="stat-value">...</span></span>
         </div>
-
         <a href="index.html">← Return to Home</a>
     </footer>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
